@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 char ** summaryRanges(int* nums, int numsSize, int* returnSize){
-    char ** retT = (char *)malloc(sizeof(char *) * numsSize);
+    char ** retT = (char **)malloc(sizeof(char *) * numsSize);
     memset(retT, 0, sizeof(char *) * numsSize);
     int index = 0;
     * returnSize = 0;
