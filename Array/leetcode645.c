@@ -2,6 +2,7 @@
  * Note: The returned array must be malloced, assume caller calls free().
  */
 #include <stdlib.h>
+#include <stdio.h>
 
 int comp (const void * a, const void * b) {
     return * (int *) a >= * (int *) b;
@@ -21,4 +22,9 @@ int* findErrorNums(int* nums, int numsSize, int* returnSize){
     }
     retT[1] = retT[0] + tmp;
     return retT;
+}
+
+int main(int argc, char ** argv) {
+    printf("main running!");
+    return 0;
 }
